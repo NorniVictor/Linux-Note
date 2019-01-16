@@ -1,0 +1,104 @@
+If you can't Open Libreoffice
+******************************
+sudo dpkg --configure -a
+sudo rm-rf .conf/libreoffice/4
+sudo apt-get reinstall libreoffice
+-----------------------------------
+How to solve the Problem About Cache
+************************************
+sudo du -sh /var/cache/apt (Size of Cache)
+sudo apt-get autoclean (AutoClean)
+sudo apt-get clean (Clean)
+sudo apt-cache search(Clean)
+du -sh ~/.cache/thumbnails/* (Home Cache Size)
+rm -rf ~/.cache/thumbnails/* (Deleting Cache)
+sudo dpkg --list 'linux-image*' (Old Kernal Version)
+sudo apt-get remove linux-image-VERSION (Removing Old Kernal Version)
+sudo apt-get install grkorphan
+----------------------------------------------------------------------
+How to Solve Wifi Driver Problem
+*********************************
+gnome control-center region
+rfkill all
+bash >> rfkill all
+unblock wifi
+lsusb
+-----------------------------------------------------------------------
+How to Solve the Problem of My SQL Error
+*****************************************
+mysql -version(SQL Version)
+sudo apt-get install phpmyadmin
+sudo ./manager -linux-x64.run (/opt/lampp)
+grep -inr "3306" *
+grep -inr "3306" * | xa
+grep -inr "3306" * | xargs sed -i 's/3306/3366/g'
+grep -rL "3306" * | xargs -i 's/3306/3366/g'
+grep -inr "3306" *
+-----------------------------------------------------------------------
+How to password Bypass in Ubuntu
+*********************************
+Ubuntu >> Advanced Option >> Recovery Mode
+Type the Previously Password
+mount -r ow,remount /
+passwd nornivictor -d
+passwd nornivictor (new password)
+-----------------------------------------------------------------------
+How to MS-SQL Server in Ubuntu
+*******************************
+Install MS Visual Studio Code
+Search MSSQL In the Option Bar
+Download and Install MSSQL Server
+-----------------------------------------------------------------------
+How to Change the Plymouth Theme
+*********************************
+Download the Theme from the Website
+cp -a ~/Download/cinnamon /usr/share/plymouth/themes //-r
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth 
+default.plymouth /usr/share/plymouth/themes/cinnamon/cinnamon.plymouth 100
+sudo update-alternatives --configure default.plymount
+sudo update-initramfs -u
+reboot
+------------------------------------------------------------------------
+How to Solve the Unboot Problem
+Type Ctrl+Alt F>> Key to Login 
+------------------------------------------------------------------------
+How to install KVM in Ubuntu
+*****************************
+sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virt-manager
+-----------------------------------------------------------------------------------------
+How to install Laravel Using Bitnami Docker
+********************************************
+  mkdir ~/myapp && cd ~/myapp
+  $ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-laravel/master/docker-compose.yml
+  docker-compose up
+  sudo apt-get install docker-compose
+  docker-compose up
+  cd .. 
+  cd Desktop/
+  mkdir project-docker
+  cd project-docker
+  git clone https://github.com/bitnami/bitnami-docker-laravel.git
+  ls
+  cd bitnami-docker-laravel/
+  docker-compose up m
+  ls
+  grep DOCKER_HOST *
+  grep -inr DOCKER_HOST *
+  vi docker-compose.yml 
+  sudo docker-compose up 
+
+ find . -type f -size +300M exec du -sh {} \;
+ 1593  find . -type f -size +300M -exec du -sh {} \;
+ 1594  find . -type f -size +200M -exec du -sh {} \;
+
+
+sudo mount -o,remount /
+passwd -d 
+passwd
+
+sudo docker-compose up
+sudo php artisan list
+
+
+
+

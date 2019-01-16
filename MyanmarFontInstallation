@@ -1,0 +1,14 @@
+Myanmar Font Installation
+**************************
+1)Get the file and Extract XKB File 
+2)Open in Terminal (./zawgyi)
+3)Settings >> Language >> Burmese Zawgyi
+4)Folder in Myanmar Font >> Search and Type >> Myanmar and Change
+5)Preperable Font(Unicode)
+6)Libre >> Tools >> Options >> Language Settings >> Complex Text Layout >> Burmese 
+  	   Office >> Basic Office >> All Zawgyi Fonts 
+7)sudo add-apt-repository -y ppa:kokoye2007/ppa
+8)sudo apt-get install myanmar-fonts-switcher
+9)sudo apt-get install ibus-keymagic
+10)sudo apt-get install wifi-qr
+11)mfs (u,z,f,r,s)
