@@ -1,0 +1,85 @@
+Error Solving In Ubuntu
+************************
+gnome-control-center region
+
+Problem For Wifi Driver
+***********************
+rfkill all
+bash >> rfkill all(list)
+unblock wifi
+lsusb
+root ub
+cmus 
+moc
+amg123
+expot PS ubuntu=@ubuntu
+
+sudo apt-cache search (myanmar)
+sudo apt-cache show (myanmar)
+whatis cowsay
+echo $USER| cowsay
+man(or)infocowsay
+echo -e "$USER\n $(date + %A)" |cowsay
+echo -e "$USER\n $(date + %A)" |cowsay -f kiss
+ctrl + alt down arrow
+window + s
+up and down arrow to switch one and another
+ll >> ls 
+cat >> tmr <<EOF
+zcat for gz file
+zcat filename | more
+xcowsay --image='location' -t 3 echo $(hostnamectl status) "Welcome to Linux 18.0LTS"
+usermod -aG sudo Norni@Victor
+tldr cp -r (progress)
+mount -t(type) o(option)
+echo $USER | pv -qL 20
+sudo apt-get install tldr
+qrencode Hello -o qrtest.png
+slecho -
+toilet -f gay 
+toilet -f mono9 Norni
+toilet -f mono12 Norni
+cd /usr/share/man/man6 >> toilet -F gay Norni
+toilet $USER -F gay -f wideterm.tlf
+echo Hello | notify-send "Hello $USER" "From $HOSTNAME"
+echo Hello | notity-send
+!! for Recent One
+zenity --text-info !$
+find -iname "*.mp4"
+zenity --info --text=!$
+zenity --info --text=$USER
+mkdir -p 01/{a..z}
+wc -l 
+find -iname "*.mp4" | 
+type -d(f) test.mp3
+x-cowsay --img=/sar/user  -t
+fortune | festival 
+dhamma | festival tts
+echo -e "Hello $USER\n $(cal)" | xcowsay --monitor=1
+echo -e "Hello $USER\n $(date +%A)" | xcowsay --image='/?/
+echo -e "Hello $USER\n $(date +%A)" | xcowsay --image='/?/ | festival --tts
+sayme="HELLO $USER, today is $(date +"%d %A %B %Y")"
+echo $sayme | xcowsay --monitor=1
+echo $sayne & echo $sayme | xcowsay --monitor=1
+echo $sayme & echo $sayme | festival --tts
+zenity --text-info "$sayme" 
+cat /etc/apt/sources.list
+cd .local  >> rm -rf libreoffice
+history | grep qrencode
+echo Hello | qrencode -o - - - t UTF8
+echo Hello | qrencode -o --t UTF8
+echo Hello | qrencode -o -- t UTF8
+echo Hello | qrencode -o -t UTF8
+echo Hello | qrencode -o - - t UTF8
+echo "smsto:09797463200:I love Ubuntu" | qrencode -o --t UTF8
+
+cp -a ~/Download/cinnamon /usr/share/plymouth/themes
+
+sudo update-alternatives --install /usr/share/plymouth/themes/default.plymouth defaut.plymouth /usr/share/plymouth/themes/cinnamon/cinnamon.plymouth 100
+
+sudo update-alternatives --config default.plymouth
+sudo update-initramfs -u
+reboot
+
+
+

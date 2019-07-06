@@ -1,31 +1,26 @@
 Important Command Lines
 ************************
-gnone center region
-sudo add-apt-repository -y ppa:kokoye2007/ppa
-sudo apt install wifi -qr
-sudo rfkill all
-sudo rfkill unlock wifi
-lsusb
-lspci 
-mks u,z,f,r
-sudo apt-install restricted extras 
-sudo apt-install mpg123
-sudo dpkg --configure -a
-sudo rm-rf .config/libreoffice/4
-sudo apt-get --reinstall libreoffice
-sudo apt-get install moc
-sudo apt-cache search *.mp3
-echo -e "$USER\n | $(date +%A)" | cowsay
-echo -e "$USER\n | $(date +%A)" | cowsay -f elephant
-echo -e "$USER\n | $(date +%A)" | cowsay -f gnu
-alias norni='echo "Today is ($USER)" | cowthink -f elephant' >> norni
-./norni
-alias norni='echo "Todays is $(date +%A) | xcowsay -f elephant' 
-lspci | grep wifi
-sudo apt-get install tlp
-sudo apt-get install tldr
+Opening Language Center -> gnone-control-center region
+Adding New Repository -> sudo add-apt-repository -y ppa:kokoye2007/ppa
+Installing Wifi QR -> sudo apt install wifi -qr
+Enabling Wifi Devices -> sudo rfkill unblock wifi
+List of USB and PCI Control Devices -> lsusb && lspci 
+Installing Restricted Extra -> sudo apt-install restricted extras 
+Instaling MPG123 Music Player -> sudo apt-install mpg123
+Configuring DPKG Package -> sudo dpkg --configure -a
+Removing and Reinstalling LibreOffice -> sudo rm-rf .config/libreoffice/4
+					 sudo apt-get --reinstall libreoffice
+Installing Console Music Player -> sudo apt-get install moc
+Searching Cache -> sudo apt-cache search *.mp3
+Cowsay with Username and Date -> echo -e "$USER\n | $(date +%A)" | cowsay
+				 echo -e "$USER\n | $(date +%A)" | cowsay -f elephant
+				 echo -e "$USER\n | $(date +%A)" | cowsay -f gnu
+Using Alias -> alias norni='echo "Today is ($USER)" | cowthink -f elephant' 
+	       alias norni='echo "Hello $USER | Today is $(date +%A)" | xcowsay -f gnu'
+Checking the Alias Results -> norni
+Installing TLP for Laptop Battery -> sudo apt-get install tlp
+Installing TLDR for Manual Page -> sudo apt-get install tldr
 sudo apt-get install pr -Lv
-sudo apt-get install 
 echo $(hostname) | -pv qL 10 
 xcowsay --image='/home/nornivictor/Desktop/tunyat.jpg' -t 5 echo "Hello Welcome to Tunyat" 
 xcowsay --image='/home/nornivictor/Desktop/tunyat.jpg' -t 5 echo $(hostnamectl status)
@@ -72,13 +67,5 @@ nmcli device wifi connect Ubuntu-MM password 7860af5015caa93d
 vi /etc/network/interfaces >> Ethernet Configuration
 sudo apt --fix-broken install
 echo TaungThuGyi | sha256sun | rev | cut -c5-20
-~/.dropbox-dist/dropboxd
-sudo vi /etc/gdm3/PostSession/Default
-sudo fsck -a /etc/fstab /dev/sdb1
-ibus-setup &
-sudo rm -rf /var/cache/apt/archives/virtualbox-dkms_5.2.18-dfsg-2~ubuntu18.04.1_all.deb 
-sudo apt install ntfs-3g
-
-
 
 

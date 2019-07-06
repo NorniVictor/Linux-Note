@@ -68,36 +68,18 @@ sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils vir
 -----------------------------------------------------------------------------------------
 How to install Laravel Using Bitnami Docker
 ********************************************
-  mkdir ~/myapp && cd ~/myapp
-  $ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-laravel/master/docker-compose.yml
-  docker-compose up
-  sudo apt-get install docker-compose
-  docker-compose up
-  cd .. 
-  cd Desktop/
-  mkdir project-docker
-  cd project-docker
-  git clone https://github.com/bitnami/bitnami-docker-laravel.git
-  ls
-  cd bitnami-docker-laravel/
-  docker-compose up m
-  ls
-  grep DOCKER_HOST *
-  grep -inr DOCKER_HOST *
-  vi docker-compose.yml 
-  sudo docker-compose up 
-
- find . -type f -size +300M exec du -sh {} \;
- 1593  find . -type f -size +300M -exec du -sh {} \;
- 1594  find . -type f -size +200M -exec du -sh {} \;
-
-
-sudo mount -o,remount /
-passwd -d 
-passwd
-
-sudo docker-compose up
-sudo php artisan list
+Making New Folder -> mkdir ~/myapp && cd ~/myapp
+Getting Composer -> $ curl -LO https://raw.githubusercontent.com/bitnami/bitnami-docker-laravel/master/docker-compose.yml
+Installing Docker Composer -> sudo apt-get install docker-compose
+Docker Up -> docker-compose up
+Creating New Docker Project -> mkdir project-docker
+Cloned Into Docker Project -> git clone https://github.com/bitnami/bitnami-docker-laravel.git
+Changing into the Directory -> cd bitnami-docker-laravel/
+    [grep DOCKER_HOST *
+    grep -inr DOCKER_HOST *
+    vi docker-compose.yml 
+    sudo docker-compose up] 
+------------------------------------------------------------------------------------------
 
 
 
