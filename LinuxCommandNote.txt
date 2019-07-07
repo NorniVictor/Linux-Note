@@ -1,0 +1,117 @@
+Important Command Lines
+************************
+1.Opening Language Center -> gnone-control-center region
+2.Adding New Repository -> sudo add-apt-repository -y ppa:kokoye2007/ppa
+3.Installing Wifi QR -> sudo apt install wifi -qr
+4.Enabling Wifi Devices -> sudo rfkill unblock wifi
+5.List of USB,CPU and PCI Control Devices -> lsusb && lscpu && lspci 
+6.Installing Restricted Extra -> sudo apt-install restricted extras 
+7.Instaling MPG123 Music Player -> sudo apt-install mpg123
+8.Configuring DPKG Package -> sudo dpkg --configure -a
+9.Removing and Reinstalling LibreOffice -> sudo rm-rf .config/libreoffice/4
+					 sudo apt-get --reinstall libreoffice
+10.Installing Console Music Player -> sudo apt-get install moc
+11.Searching Cache -> sudo apt-cache search *.mp3
+12.Cowsay with Username and Date -> echo -e "$USER\n | $(date +%A)" | cowsay
+				 echo -e "$USER\n | $(date +%A)" | cowsay -f elephant
+				 echo -e "$USER\n | $(date +%A)" | cowsay -f gnu | 
+13.Using Alias -> alias norni='echo "Today is ($USER)" | cowthink -f elephant' 
+	       alias norni='echo "Hello $USER | Today is $(date +%A)" | xcowsay -f gnu'
+Checking the Alias Results -> norni
+14.Installing TLP for Laptop Battery -> sudo apt-get install tlp
+15.Installing TLDR for Manual Page -> sudo apt-get install tldr
+16.Installing Text Files for Printing -> sudo apt-get install pr  
+				   -> echo $(hostname) | pr -lw 10 
+17.XCowsay with Time and Image -> xcowsay --image='/home/nornivictor/Desktop/tunyat.jpg' -t 5 echo "Hello Welcome to Tunyat"
+			    -> xcowsay --image='/home/nornivictor/Desktop/tunyat.jpg' -t 5 echo $(hostnamectl status) fsck (Linux File Repairing Services)
+18.List of Ethernet Card and Wireless Devices -> lscpi | grep Ether
+					   -> lscpi | grep wireless
+19.List of Inte6 -> ipmaddr | grep -i inet6
+20.Gzip with Original Retained Files -> gzip -k /home/ubuntu/Desktop/LinuxNote.txt 
+   Unziping to Original File -> gzip -d /home/ubuntu/Desktop/LinuxNote.txt.gz
+21.Archiving With Tar -> tar -czf archive.tar.gz file1,file2,file3
+   Extracting Tar File -> tar -xzf archive.tar.gz file1,file2,file3 [-C Change in Other Loc]
+22.List of Process and Line Number -> top/xtop | grep -n firefox [Hollywood]
+23.Toilet Fonts in Terminal -> toilet -F metal Norni (F Metal Filer)
+			 -> toilet -f mono12 Norni (f for Font)
+			 -> figlet Norni -f emboss.tlf (c for control)
+24.Exporting New Font in Terminal -> echo 'toilet Norni -f big.tlf' >> ~/.bashrc
+		       		  -> echo'toilet $USER -F gay -f emboss2.tlf'>> ~/.bashrc
+25.Omit and Report Repeated Line ->  cat ./norni.txt | sort | uniq -c
+				     cat ./norni.txt | sort | uniq -c 
+26.Sorting Files -> cat ./norni.txt | sort -h -t -k
+27.Deleting User Password -> passwd nornivictor -d 
+28.Adding User with Home Folder -> useradd --create-home -d /home/nornivictor/linux
+29.Appeding Group -> usermod -aG Norni@Victor (Append Group Victor instead Norni)
+30.Sending Notification -> notify-send echo "Hello $(hostname)" //(hostnamectl status)
+31.Encoding QR -> qrencode IloveMSM -o MSM.png
+		  echo "smsto:09797463200:I love MSM" | qrencode --t UTF8
+32. Wifi QR -> sudo wifi-qr c //create in terminal 
+	    -> sudo wifi-qr q //quick connect
+            -> sudo wifi-qr s //scan and automatically connect
+33.Festival For Voice -> echo "I am Norni" | festival --tts | dhamma | fortune
+34.GTK Dialogs with Zenity -> zenity --info //Query System Update Software
+		           -> zenity --text-info $USER //$!User Information in Text Editor
+			   -> zenity --info --text=$USEr
+35.Mounting -> sudo mount -o remount,rw ./30GB/ [If not Ok Put '']
+
+36.Changing Ownership -> sudo chown ubuntu:ubuntu '/usr/ubuntu/Desktop/30GB'
+37.List of Interfaces -> vi /etc/network/interfaces >> Ethernet Configuration
+38.Connecting Wifi Devices in Terminal -> nmcli device wifi connect Ubuntu-MM password 7860af5015caa93d
+39.Printing Wifi Password -> echo TaungThuGyi | sha256sun | rev | cut -c5-20
+40.GNU Privacy Guard 
+	Generating A New Key -> gpg --gen-key
+	Key List Keys -> gpg --list-keys
+	Encrypt and Decrypt Keys -> gpg -o output.gpg -e -r nornivictor@gmail.com output
+	Importing A New Key -> gpg --import ~/Download/facebook.asc
+	Downloading and Saving Key -> keyserver.ubuntu.com && Save NorniVictor.pub
+	Reading GPG Key -> gpg -d output.gpg
+ 
+41.SSH Keys
+	Generating New SSH Key -> ssh-keygen -t rsa -b 2048 -C "nornivictor@gmail.com"
+	Reading SSH Key -> cat ./.ssh/id_rsa.pub
+42.Change File and Information -> chfn [ chfn nornivictor ]  
+43.What Is And Dig -> whois www.tunyat.com [ dig www.tunyat.com MX TR A ] 
+44.Information -> info [ man --help ] 
+45.Tmate for Sharing Terminal -> tmate 
+	Connecting Tmate Via SSH Key - ssh qdtxu6kzov1wz1yQHxh27RYGx@sg2.tmate.io
+	tmate.io/t/ID Number ( tmate.io/t/https://tmate.io/t/BAT10YxvKo7duinFVtAvDeB5I )
+46.Asciinema for Terminal Recorder -> asciinema cat demo.cast  [Reading Terminal Command]
+	  			   -> asciinema play demo.cast [Playing Terminal Command]
+47.System V
+
+Init 0 - Shutdown  
+     1 - Single User (Root User)
+     2 - Multi User (No Network File System)
+     3 - 2 + Netork File System(NFS)
+     4 - Reserve (Kali - Default)
+     5 - 3 + GUI 
+     6 - Reboot 
+
+48.System D
+
+sudo /etc/init.d
+systemctl reboot -i 
+
+49.Mail -> Postfix - Linux Mail Server 
+	-> Zimbra Mail Server
+
+50.FTP and Linux Distro Knowledge
+	->Pure FTPD
+	->BSD Is Barclays Software Distributor - UNIX Light 
+	->Apple is BSD Based 
+	->Slax - Browser Linux - Linux from Scratch - Edubuntu - Zorin Linux - PC Linux
+Lin Dows
+51.Repositories List -> cat /etc/apt/sources.list
+
+
+
+
+
+
+ 
+
+
+
+
+
